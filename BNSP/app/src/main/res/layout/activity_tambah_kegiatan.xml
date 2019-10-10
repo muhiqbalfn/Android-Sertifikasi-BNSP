@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    tools:context=".TambahKegiatan">
+
+    <TextView
+        android:id="@+id/textNomor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Nomor" />
+
+    <EditText
+        android:id="@+id/editNomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textNomor"
+        android:layout_below="@id/textNomor"
+        android:inputType="number"
+        android:maxLength="10">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editNomor"
+        android:layout_below="@id/editNomor"
+        android:layout_marginTop="10dp"
+        android:text="Nama"/>
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textNama"
+        android:layout_below="@id/textNama"
+        android:inputType="text"
+        android:maxLength="20"/>
+
+    <TextView
+        android:id="@+id/textKeterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editNama"
+        android:layout_below="@id/editNama"
+        android:layout_marginTop="10dp"
+        android:text="Keterangan"/>
+
+    <EditText
+        android:id="@+id/editKeterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textKeterangan"
+        android:layout_below="@id/textKeterangan"
+        android:inputType="text"
+        android:maxLength="50"/>
+
+    <TextView
+        android:id="@+id/textWaktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editKeterangan"
+        android:layout_below="@id/editKeterangan"
+        android:layout_marginTop="10dp"
+        android:text="Waktu"/>
+
+    <EditText
+        android:id="@+id/editWaktu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textWaktu"
+        android:layout_below="@id/textWaktu"
+        android:inputType="none"
+        android:focusable="false"
+        android:hint="Pilih Waktu"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editWaktu"
+        android:layout_marginTop="10dp"
+        android:text="Tambahkan"
+        />
+
+    <Button
+        android:id="@+id/btnSelesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginTop="3dp"
+        android:text="Selesai"/>
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSelesai"
+        android:layout_marginTop="3dp"
+        android:text="Kembali"/>
+
+</RelativeLayout>
